@@ -1,0 +1,16 @@
+name: ml_project_template
+channels:
+  - defaults
+  - pytorch
+dependencies:
+  - python=3.7.3
+  - h5py
+  - numpy
+  - scikit-learn
+  - pytorch
+  - torchvision
+  - pip
+  - pip:
+    - pymongo
+    - sacred
+    - tqdm

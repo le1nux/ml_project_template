@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="hillebrand@localhost:5288">
+    <serverData>
+      <paths name="hillebrand@localhost:5288">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/bit/hillebrand/phd/makefile_experiment" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

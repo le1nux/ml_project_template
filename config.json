@@ -1,0 +1,58 @@
+{
+  "task_file_paths": {
+    "raw_data_path": "data/raw",
+    "parsed_data_path": "data/parsed/captions_2014.p",
+    "processed_data_path": "data/processed/captions_2014.p",
+    "featurized_data_path": "data/featurized/captions_2014.h5"
+  },
+  "parse_data": {
+    "test": "test",
+    "abc": "abcd"
+  },
+  "process_data": {
+    "test": "testd"
+  },
+  "featurize_data": {
+    "tfidf": {
+      "max_features": 4000
+    }
+  },
+  "train": {
+    "encoder": {
+      "name": "EncoderAnn",
+      "args": {
+        "hidden_dim": 512,
+        "latent_dim": 128
+      }
+    },
+    "decoder": {
+      "name": "DecoderAnn",
+      "args": {
+        "hidden_dim": 512
+      }
+    },
+    "optimizer": {
+      "module": "torch.optim",
+      "name": "Adam",
+      "args": {
+        "lr": 1e-4
+      }
+    },
+    "loss": {
+      "module": "utils.losses",
+      "name": "MSELoss"
+    },
+    "metric": {
+      "module": "utils.metrics",
+      "name": "F1Score"
+    },
+    "trainer": {
+      "epoch": 5,
+      "batch_size": 512,
+      "logging": {
+        "tensorboard_path": "",
+        "logging_path": ""
+      }
+    }
+  }
+}
